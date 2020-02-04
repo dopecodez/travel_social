@@ -11,12 +11,12 @@ interface IListProps {
 }
 
 export default class List extends Component<IListProps, IListStates> {
-    constructor(props: IListProps){
+    constructor(props: IListProps) {
         super(props);
         let data: Object[] = [
-          { post: 'First', upvotes: 3, downvotes: 5 },
-          { post: 'Second', upvotes: 6, downvotes: 10 },
-          { post: 'Third', upvotes: 4, downvotes: 10 }
+            { post: 'First', upvotes: 3, downvotes: 5 },
+            { post: 'Second', upvotes: 6, downvotes: 10 },
+            { post: 'Third', upvotes: 4, downvotes: 10 }
         ]
         this.state = {
             posts: data,
@@ -26,17 +26,16 @@ export default class List extends Component<IListProps, IListStates> {
         this.handleChange = this.handleChange.bind(this);
     }
 
-    addPost(){
-        console.log(this.state.newPost);
-        if(this.state.newPost != ''){
+    addPost() {
+        if (this.state.newPost != '') {
             this.setState({
-                posts: [{post: this.state.newPost, upvotes:0, downvotes:0}, ...this.state.posts],
+                posts: [{ post: this.state.newPost, upvotes: 0, downvotes: 0 }, ...this.state.posts],
                 newPost: ''
             })
-        }else alert('Why you making an empty post?')   
+        } else alert('Why you making an empty post?')
     }
 
-    handleChange(event : any){
+    handleChange(event: any) {
         this.setState({
             newPost: event.target.value
         })
@@ -45,18 +44,21 @@ export default class List extends Component<IListProps, IListStates> {
     render() {
         return (
             <div>
-                <div className='listClass'>
+                <div id='listClass'>
                     {this.state.posts
                         .sort((a: any, b: any) => b.upvotes - a.upvotes)
                         .map(function (item: any) {
-                            return <div>{item.post} - {item.upvotes} - {item.downvotes}</div>
+                            return (<div><div id='post'>{item.post}</div>
+                                <div id="upvote" > {item.upvotes}</div>
+                                <div id="downvote"> {item.downvotes}</div>
+                            </div>)
                         })
                     }
                 </div>
                 <div>
-                    <input className='postArea' type='textbox' placeholder='New Post' value={this.state.newPost} 
-                    onChange={this.handleChange}></input><br/>
-                    <button className='submitButton' type='submit' onClick={this.addPost}>Add Post</button>
+                    <input id='postArea' type='textbox' placeholder='New Post' value={this.state.newPost}
+                        onChange={this.handleChange}></input><br />
+                    <button id='submitButton' type='submit' onClick={this.addPost}>Add Post</button>
                 </div>
             </div>
         );
