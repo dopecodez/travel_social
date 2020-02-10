@@ -11,7 +11,7 @@
     cursor: pointer;
   }
 
-  #postArea {
+  #postBodyArea {
     width: 600px;
     height: 200px;
     margin:0 auto;
@@ -21,38 +21,86 @@
     border:2px solid black;
   }
 
-  #post {
-      
+  #postTitleArea {
+    width: 600px;
+    height: 60px;
+    margin:0 auto;
+    box-sizing: border-box;
+    text-align: left;
+    border:2px solid black;
+  }
+
+  #listClass {
+      height: 100%;
+      width: 100%;
+  }
+
+  #postTitle {
+    height:30px;
+    padding-left: 4px;
+    background-color: rgb(44, 42, 42);
+    color: white;
+  }
+
+  #postBody {
+    height: 80px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(189, 180, 180);
+  }
+
+  #postDesc{
+    padding-left: 4px;
   }
 
   #upvote { width: 0; height: 0;
-    border-color: orangered;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid orangered;
-} #upvote:after {
-    width: 5px;
-    height: 6px;
-    background-color: orangered;
-    content: '';
-    position:absolute;
-    margin-top: 8px;
-    margin-left: -3px;
-} 
+    border-color: greenyellow;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid greenyellow;
+    margin: 0 auto;
+    padding-top: 10px;
+} #upvote:hover{
+  cursor: pointer;
+  border-color: darkgreen;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-bottom: 18px solid darkgreen;
+  margin: 0 auto;
+}
 
 #downvote {
     width: 0;
     height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid #CCCCFF;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid orangered;
     margin-left: -1px;
-} #downvote:after {
-    width: 5px;
-    height: 6px;
-    background-color: #CCCCFF;
-    content: '';
-    position:absolute;
-    margin-left: -2px;
-    margin-top: -14px;
+    margin: 0 auto;
+} 
+#downvote:hover{
+  cursor: pointer;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 18px solid darkred;
+  margin-left: -1px;
+  margin: 0 auto;
+}
+
+#count{
+  height: 6px;
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+
+#voteBox{
+  width:40px;
+  height:100%;
+  float: right;
+  position: relative;
+  top: -52px;
+  background-color: whitesmoke;
 }
