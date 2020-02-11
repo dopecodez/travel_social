@@ -1,37 +1,39 @@
-  #listClass {
-      height: 100%;
-      width: 100%;
-  }
+#listClass {
+  height: 100%;
+  width: 100%;
+}
 
-  #postTitle {
-    height:30px;
-    padding-left: 4px;
-    background-color: rgb(44, 42, 42);
-    color: white;
-    padding-top: 6px;
-    vertical-align: middle;
-  }
+#postTitle {
+  height:30px;
+  padding-left: 4px;
+  background-color: rgb(44, 42, 42);
+  color: white;
+  padding-top: 6px;
+  vertical-align: middle;
+}
 
-  #postBody {
-    height: 80px;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: rgb(189, 180, 180);
-  }
+#postBody {
+  height: 140px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(189, 180, 180);
+}
 
-  #postDesc{
-    padding-left: 4px;
-  }
+#postDesc{
+  padding-left: 4px;
+}
 
-  #upvote { width: 0; height: 0;
-    border-color: greenyellow;
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-    border-bottom: 16px solid greenyellow;
-    margin: 0 auto;
-    padding-top: 10px;
+#upvote { 
+  width: 0; 
+  height: 0;
+  border-color: greenyellow;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 16px solid greenyellow;
+  margin: 0 auto;
+  padding-top: 35px;
 } #upvote:hover{
   cursor: pointer;
   border-color: green;
@@ -42,12 +44,12 @@
 }
 
 #downvote {
-    width: 0;
-    height: 0;
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-    border-top: 16px solid orangered;
-    margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid orangered;
+  margin: 0 auto;
 } 
 #downvote:hover{
   cursor: pointer;
@@ -73,8 +75,9 @@
   float: right;
   position: relative;
   top: -54px;
+  vertical-align: center;
   border: 1px dotted gray;
-  background-color: whitesmoke;
+  background-color: rgb(182, 171, 152);
 }
 
 #postBodyArea {
