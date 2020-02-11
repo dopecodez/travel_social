@@ -1,35 +1,3 @@
-#submitButton {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-
-  #postBodyArea {
-    width: 600px;
-    height: 200px;
-    margin:0 auto;
-    box-sizing: border-box;
-    text-align: left;
-    margin: 10px;
-    border:2px solid black;
-  }
-
-  #postTitleArea {
-    width: 600px;
-    height: 60px;
-    margin:0 auto;
-    box-sizing: border-box;
-    text-align: left;
-    border:2px solid black;
-  }
-
   #listClass {
       height: 100%;
       width: 100%;
@@ -40,6 +8,8 @@
     padding-left: 4px;
     background-color: rgb(44, 42, 42);
     color: white;
+    padding-top: 6px;
+    vertical-align: middle;
   }
 
   #postBody {
@@ -64,10 +34,10 @@
     padding-top: 10px;
 } #upvote:hover{
   cursor: pointer;
-  border-color: darkgreen;
+  border-color: green;
   border-left: 18px solid transparent;
   border-right: 18px solid transparent;
-  border-bottom: 18px solid darkgreen;
+  border-bottom: 18px solid green;
   margin: 0 auto;
 }
 
@@ -83,7 +53,7 @@
   cursor: pointer;
   border-left: 18px solid transparent;
   border-right: 18px solid transparent;
-  border-top: 18px solid darkred;
+  border-top: 18px solid red;
   margin-left: -1px;
   margin: 0 auto;
 }
@@ -102,7 +72,47 @@
   height: 98%;
   float: right;
   position: relative;
-  top: -48px;
+  top: -54px;
   border: 1px dotted gray;
   background-color: whitesmoke;
+}
+
+#postBodyArea {
+  width: 100%;
+  height: 200px;
+  box-sizing: border-box;
+  text-align: left;
+  padding:0 5px 150px;
+  border:2px solid black;
+}
+
+#postTitleArea {
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  text-align: left;
+  border:2px solid black;
+}
+
+#postArea {
+  width:50%;
+  margin: 0 auto;
+  height: 300px;
+  text-align: center;
+}
+
+#submitButton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#submitButton:hover{
+  background-color: blue;
+  cursor: pointer;
 }
