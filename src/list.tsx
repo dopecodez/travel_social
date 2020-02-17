@@ -18,7 +18,7 @@ type post = {
     downvotes: number
 }
 
-export default class List extends Component<IListProps, IListStates> {
+export default class PostsWall extends Component<IListProps, IListStates> {
     private data: post[];
     constructor(props: IListProps) {
         super(props);
