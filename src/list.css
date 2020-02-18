@@ -3,25 +3,71 @@
   width: 100%;
 }
 
-#postTitle {
-  height:30px;
-  padding-left: 4px;
-  background-color: rgb(44, 42, 42);
-  color: white;
-  padding-top: 6px;
-  vertical-align: middle;
-}
-
-#postBody {
-  height: 140px;
+#fullPost{
+  height: 160px;
   width: 90%;
   margin: 0 auto;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+}
+
+#postDetails{
+  height: 20px;
+  width: 100%;
+  background-color: rgba(35, 86, 168, 0.3);
+}
+
+#postDetails #userName{
+  width: 50%;
+  border-right: black solid 1px;
+  padding-left: 4px;
+}
+#postDetails #topics{
+  width: 49.7%;
+  position: relative;
+  top: -21px;
+  padding-top: 2px;
+  left:50%;
+  padding-left: 8px;
+}
+#postDetails #topics:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: antiquewhite;
+}
+
+#postBody {
+  height: 100%;
+  width: 92%;
   background-color: rgb(189, 180, 180);
 }
 
+#postTitle {
+  display: -webkit-box;
+  height:52px;
+  background-color: rgb(44, 42, 42);
+  color: white;
+  font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  line-height: 1.2em;
+  -webkit-box-orient: vertical;
+  padding-left: 4px;
+  padding-top: 6px;
+}
+#postTitle:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
 #postDesc{
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  line-height: 1.2em;
+  -webkit-box-orient: vertical;
   padding-left: 4px;
 }
 
@@ -29,33 +75,33 @@
   width: 0; 
   height: 0;
   border-color: greenyellow;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-bottom: 16px solid greenyellow;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid greenyellow;
   margin: 0 auto;
   padding-top: 35px;
 } #upvote:hover{
   cursor: pointer;
   border-color: green;
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-bottom: 18px solid green;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-bottom: 22px solid green;
   margin: 0 auto;
 }
 
 #downvote {
   width: 0;
   height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-top: 16px solid orangered;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid orangered;
   margin: 0 auto;
 } 
 #downvote:hover{
   cursor: pointer;
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 18px solid red;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-top: 22px solid red;
   margin-left: -1px;
   margin: 0 auto;
 }
@@ -70,12 +116,12 @@
 }
 
 #voteBox{
-  width:40px;
-  height: 98%;
+  width:7.8%;
+  height: 99%;
   float: right;
   position: relative;
-  top: -54px;
-  vertical-align: center;
+  top: -160px;
+  vertical-align: top;
   border: 1px dotted gray;
   background-color: rgb(182, 171, 152);
 }
